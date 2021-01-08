@@ -21,7 +21,7 @@ end
 def get_japanese_emoticon(file_path, emoji)
   # code goes here
   dictionary = load_library(file_path)
-  en = ""
+  eng_name = ""
   dictionary.each do |name, value|
     if emoji == value[:japanese]
        return eng_name = name
