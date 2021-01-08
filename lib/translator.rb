@@ -18,17 +18,8 @@ def load_library (file_path)
   dictionary
 end
 
-def get_english_meaning(file_path, emoji)
-  dictionary = load_library(file_path)
-  eng_name = ""
-  dictionary.each do |name, value|
-    if emoji == value[:english]
-      eng_name = name
-    else
-      eng_name = "Sorry, that emoticon was not found"
-    end
-  end
-  eng_name
+def get_japanese_emoticon
+  # code goes here
 end
 
 def get_english_meaning(file_path, emoji)
@@ -36,7 +27,7 @@ def get_english_meaning(file_path, emoji)
   eng_name = ""
   dictionary.each do |name, value|
     if emoji == value[:japanese]
-      return eng_name = name
+       return eng_name = name
     else
       eng_name = "Sorry, that emoticon was not found"
     end
