@@ -18,7 +18,7 @@ def load_library (file_path)
   dictionary
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path, emoji)
   # code goes here
   dictionary = load_library(file_path)
   eng_name = ""
